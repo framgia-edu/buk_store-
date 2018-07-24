@@ -9,12 +9,64 @@ vi:
   sign_up: "Đăng kí"
   sign_in: "Đăng nhập"
   cart: "Giỏ hàng"
+  welcome: "Chào mừng đến với BukStore"
   layouts:
     header:
       nav_all: "Tất cả sách"
       deal: "Khuyến mãi"
     footer:
-
   static_pages:
     home:
       detail: "Mô tả sách"
+  users:
+    title_sample: "Chào mừng đến với Ứng dụng mẫu!"
+    new:
+      sign_up: "Đăng ký"
+      create: "Tạo tài khoản của tôi"
+    create:
+      create_failed: "Lỗi, không thể tạo"
+      not_found: "Không tìm thấy người dùng"
+    form:
+      error: "lỗi "
+      form_container: "Biểu mẫu có chứa "
+      name: "Họ tên"
+      gender: "Giới tính"
+      birthday: "Ngày sinh"
+      address: "Địa chỉ"
+      phone_number: "Số điện thoại"
+      card_number: "Số thẻ ngân hàng"
+      email: "Email"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận lại mật khẩu"
+      gender_male: "Nam"
+      gender_female: "Nữ"
+      gender_other: "Khác"
+  shared:
+    error_messages:
+      error: "lỗi"
+      form_container: "Biểu mẫu có chứa "
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: " không được để trống"
+            email:
+              blank: " không được để trống"
+              invalid: " không hợp lệ"
+            password:
+              blank: " không được để trống"
+              too_short: " quá ngắn (tối thiểu 6 ký tự)"
+            birthday:
+              blank: " không được để trống"
+            address:
+              blank: " không được để trống"
+            phone_number:
+              blank: " không được để trống"
+              too_short: " quá ngắn (tối thiểu 8 ký tự)"
+              too_long: " quá dài (tối đa 15 ký tự)"
+            card_number:
+              blank: " không được để trống"
+              too_short: " quá ngắn (tối thiểu 10 ký tự)"
+              tô_long: " quá dài (tối đa 20 ký tự)"
