@@ -66,10 +66,6 @@ class User < ApplicationRecord
     end
   end
 
-  def current_user? user
-    user == self
-  end
-
   private
 
   def email_downcase
@@ -77,7 +73,7 @@ class User < ApplicationRecord
   end
 
   def create_activation_digest
-    @activation_token  = User.new_token
+    @activation_token = User.new_token
     self.activation_digest = User.digest activation_token
   end
 end

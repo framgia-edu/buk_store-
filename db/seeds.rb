@@ -17,5 +17,7 @@ categories = Category.order(:created_at).take(6)
   name = Faker::Book.title
   author = Faker::Book.author
   publisher = Faker::Book.publisher
-  categories.each {|category| category.books.create!(name: name, author: author, publisher: publisher)}
+  categories.each {|category| category.books.create!(name: name, author: author, publisher: publisher, price: 10, quantity: 10)}
 end
+
+Cart.destroy_all

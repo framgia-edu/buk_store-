@@ -71,13 +71,18 @@ ActiveRecord::Schema.define(version: 2018_07_26_182450) do
 
   create_table "orders", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "user_id"
+    t.integer "cart_id"
     t.integer "status"
     t.decimal "additional_charge", precision: 10
     t.decimal "total_price", precision: 10
     t.datetime "transaction_date"
     t.string "note"
+    t.string "delivery_address"
+    t.string "delivery_type"
+    t.string "payment_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["cart_id"], name: "index_orders_on_cart_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
