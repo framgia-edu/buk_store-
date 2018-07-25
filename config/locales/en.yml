@@ -61,3 +61,13 @@ en:
   datetime:
       formats:
         default: ! "%d/%m/%Y %H:%M"
+
+  books:
+    show_all_books:
+      all_books: "All Books"
+  search:
+    search:
+      all_books: "All Books"
+      search: "Search"
+      search_for: "Search for"
+      add_to_cart: "Add to Cart"

@@ -1,4 +1,15 @@
 GIT
+  remote: https://github.com/elastic/elasticsearch-rails.git
+  revision: 212b37a1e927015f2a095e0f841c897d377ad1c7
+  branch: 5.x
+  specs:
+    elasticsearch-model (5.1.0)
+      activesupport (> 3)
+      elasticsearch (~> 5)
+      hashie
+    elasticsearch-rails (5.1.0)
+
+GIT
   remote: https://github.com/stympy/faker.git
   revision: 12dbcda73d5da82ad8e564099278e9019e16b9be
   branch: master
@@ -63,6 +74,8 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    bootstrap-will_paginate (1.0.0)
+      will_paginate
     builder (3.2.3)
     byebug (10.0.2)
     coffee-rails (4.2.2)
@@ -106,11 +119,22 @@ GEM
       dry-equalizer (~> 0.2)
       dry-logic (~> 0.4, >= 0.4.0)
       dry-types (~> 0.13.1)
+    elasticsearch (5.0.5)
+      elasticsearch-api (= 5.0.5)
+      elasticsearch-transport (= 5.0.5)
+    elasticsearch-api (5.0.5)
+      multi_json
+    elasticsearch-transport (5.0.5)
+      faraday
+      multi_json
     erubi (1.7.1)
     execjs (2.7.0)
+    faraday (0.15.2)
+      multipart-post (>= 1.2, < 3)
     ffi (1.9.25)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    hashie (3.5.7)
     i18n (1.0.1)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
@@ -138,6 +162,8 @@ GEM
     minitest (5.11.3)
     msgpack (1.2.4)
     multi_json (1.13.1)
+    multipart-post (2.0.0)
+    mysql2 (0.5.2)
     nio4r (2.3.1)
     nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
@@ -198,6 +224,10 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
+    searchkick (3.1.0)
+      activemodel (>= 4.2)
+      elasticsearch (>= 5)
+      hashie
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -230,6 +260,7 @@ GEM
     websocket-driver (0.7.0)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
+    will_paginate (3.1.6)
 
 PLATFORMS
   ruby
@@ -239,17 +270,22 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   bootstrap-datepicker-rails
   bootstrap-sass (= 3.3.7)
+  bootstrap-will_paginate (~> 1.0)
   byebug
   coffee-rails (~> 4.2)
   config
+  elasticsearch-model!
+  elasticsearch-rails!
   faker!
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
+  mysql2 (~> 0.5.2)
   puma (~> 3.11)
   rails (~> 5.2.0)
   rubocop (~> 0.54.0)
   sass-rails (~> 5.0)
+  searchkick
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
@@ -257,6 +293,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
+  will_paginate (= 3.1.6)
 
 RUBY VERSION
    ruby 2.5.1p57

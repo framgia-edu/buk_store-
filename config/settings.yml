@@ -10,3 +10,5 @@ card_number_max_length: 20
 email_max_length: 255
 password_min_length: 6
 avatar_user_size: 80
+per_page_search: 9
+per_page: 12
