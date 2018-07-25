@@ -11,19 +11,24 @@ Rails.application.routes.draw do
     post "/login", to: "sessions#create"
     delete "/logout", to: "sessions#destroy"
     get "/search", to: "search#search"
-    get "/cart", to: "cart_item#index"
     get "/forgot" , to: "password_resets#new"
     get "/password_reset_path" , to: "password_resets#edit"
     get "/addemployee", to: "users#add_employee"
     post "/addemployee", to: "users#create"
+    get "/books", to: "books#index"
+    get "/show", to: "static_pages#show"
+    post "/cart_items", to: "cart_items#create"
+    delete "/cart", to: "carts#destroy"
+    get "/cart", to: "carts#index"
   end
   resources :users
   resources :account_activations, only: [:edit]
   resources :password_resets, only: [:new, :create, :edit, :update]
-
+  post "/cart_items/add_quantity", to: "cart_items#update"
+  post "/cart_items/reduce", to: "cart_items#update"
+  delete "/cart_items/delete", to: "cart_items#destroy"
   resources :categories, only: [:index] do
     resources :books, only: [:index, :show, :new, :update]
   end
 
-  resources :cart_item, path: "/cart/items"
 end

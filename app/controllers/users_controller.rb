@@ -89,8 +89,8 @@ class UsersController < ApplicationController
   end
 
   def correct_user
-    redirect_to root_url unless (@user.current_user? current_user
-      !@user.admin?)
+    redirect_to root_url if @user
+    !@user.admin?
   end
 
   def find_user
