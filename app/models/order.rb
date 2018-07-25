@@ -1,4 +1,4 @@
 class Order < ApplicationRecord
   belongs_to :user
-  has_one :cart, dependent: :destroy
+  belongs_to :cart, dependent: :destroy
 end

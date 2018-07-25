@@ -10,9 +10,8 @@ class BooksController < ApplicationController
 
   def search_book
     @book = if params[:query].present?
-              Book.search(params[:query])
-                  .paginate page: params[:page],
-                    per_page: Settings.per_page_search
+              Book.search(params[:query]).paginate page: params[:page],
+                per_page: Settings.per_page_search
             else
               Book.all.paginate page: params[:page],
                 per_page: Settings.per_page

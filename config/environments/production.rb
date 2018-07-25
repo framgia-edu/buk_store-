@@ -40,6 +40,21 @@ Rails.application.configure do
 
   # Store uploaded files on the local file system (see config/storage.yml for options)
   config.active_storage.service = :local
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  host = "radiant-basin-89627.herokuapp.com"
+  config.action_mailer.default_url_options = { host: host }
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: "587",
+    authentication: :plain,
+    user_name: ENV["mail_username"],
+    password: ENV["mail_password"],
+    enable_starttls_auto: true,
+    domain: "gmail.com"
+  }
+
+  Elasticsearch::Model.client = Elasticsearch::Client.new host: ENV['SEARCHBOX_URL']
 
   # Mount Action Cable outside main process or domain
   # config.action_cable.mount_path = nil
