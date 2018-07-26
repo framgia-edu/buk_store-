@@ -1,0 +1,20 @@
+vi:
+  lang_en: "Tiếng Anh"
+  lang_vi: "Tiếng Việt"
+  title_full: "Cửa hàng BukStore"
+  home_title: "Trang chủ"
+  about_title: "Trang giới thiệu"
+  help_title: "Trang hỗ trợ"
+  contact_title: "Trang liên hệ"
+  sign_up: "Đăng kí"
+  sign_in: "Đăng nhập"
+  cart: "Giỏ hàng"
+  layouts:
+    header:
+      nav_all: "Tất cả sách"
+      deal: "Khuyến mãi"
+    footer:
+
+  static_pages:
+    home:
+      detail: "Mô tả sách"

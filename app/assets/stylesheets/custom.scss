@@ -1,0 +1,55 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+h1 {
+  margin-top: 120px;
+}
+
+header, footer {
+  background-color: #b3b3b3;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #ab4506;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: black;
+}
+
+.container-fluid {
+  background-color: #b3b3b3;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background: #ffffff;
+  border: none;
+}
+
+.navbar-toggle {
+  background-color: #333;
+}
+
+.jumbotron {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-image: url(jumbotronbackground.jpg);
+  background-position: 0% 25%;
+  background-size: cover;
+  color: white;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  height: 500px;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  margin-top: 50px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
