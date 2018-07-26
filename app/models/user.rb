@@ -1,9 +1,15 @@
 class User < ApplicationRecord
-  enum user_type: {employee: 0, customer: 1}
+  enum user_type: {employee: 0, customer: 1, admin: 2}
   enum gender: {male: 1, female: 2, trans: 3}
   has_one :cart
   has_many :orders, dependent: :destroy
   has_many :employees
+
+  after_initialize :set_default_role, :if => :new_record?
+
+  def set_default_role
+    self.user_type ||= :customer
+  end
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 

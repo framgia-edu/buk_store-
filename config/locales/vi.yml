@@ -10,6 +10,7 @@ vi:
   sign_in: "Đăng nhập"
   cart: "Giỏ hàng"
   welcome: "Chào mừng đến với BukStore"
+
   layouts:
     header:
       nav_all: "Tất cả sách"
@@ -18,7 +19,12 @@ vi:
       update: "Cập nhật tài khoản"
       settings: "Cài đặt"
       signout: "Đăng xuất"
+      order_list: "Đơn hàng"
+      add_book: "Thêm sách"
+      user_list: "Người dùng"
+      stastitics: "Thống kê"
     footer:
+
   sessions:
     new:
       p1: "Người dùng mới?"
@@ -27,11 +33,23 @@ vi:
       forgot_password: "Quên mật khẩu?"
     create:
       error_signin: "Sai email hoặc mật khẩu!"
+
+  shared:
+    error_messages:
+      error_txt1: "Mẫu đăng kí chứa"
+      error_txt2: "lỗi"
+
   static_pages:
     home:
       detail: "Mô tả sách"
+
   users:
     title_sample: "Chào mừng đến với Ứng dụng mẫu!"
+    index:
+      user_list: "Tất cả người dùng"
+      delete: "Xóa người dùng"
+      sure: "Bạn chắc chứ?"
+      add_user: "Người dùng mới"
     new:
       sign_up: "Đăng ký"
       create: "Tạo tài khoản của tôi"
@@ -40,6 +58,17 @@ vi:
       not_found: "Không tìm thấy người dùng"
     show:
       not_found: "Người dùng này không tồn tại!"
+    edit:
+      edit_title: "Chỉnh sửa hồ sơ"
+      edit_txt1: "Chỉnh sửa hồ sơ "
+      edit_txt2: "Thay đổi"
+      edit_submit: "Lưu thay đổi"
+      log_msg: "Bạn phải đăng nhập đã!"
+      wrong_user_msg: "Bạn không thể chỉnh sửa hồ sơ người khác!"
+    update:
+      update_success: "Cập nhật hồ sơ thành công!"
+    destroy:
+      delete_success: "Người dùng đã bị xóa!"
     form:
       error: "lỗi "
       form_container: "Biểu mẫu có chứa "
@@ -55,10 +84,14 @@ vi:
       gender_male: "Nam"
       gender_female: "Nữ"
       gender_other: "Khác"
+    newUser:
+      addUser_title: "Thêm người dùng"
+      addUser_submit: "Thêm"
   shared:
     error_messages:
       error: "lỗi"
       form_container: "Biểu mẫu có chứa "
+
   activerecord:
     errors:
       models:
@@ -69,6 +102,7 @@ vi:
             email:
               blank: " không được để trống"
               invalid: " không hợp lệ"
+              taken: " đã tồn tại"
             password:
               blank: " không được để trống"
               too_short: " quá ngắn (tối thiểu 6 ký tự)"

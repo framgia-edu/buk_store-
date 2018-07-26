@@ -1,0 +1,33 @@
+<% provide :title, t(".user_list") %>
+<div class="container text-center">
+  <h1><%= t ".user_list" %></h1>
+  <h3><%= link_to t(".add_user"), addUser_path %></h3>
+</div>
+<div class="container text-center">
+
+  <%= will_paginate %>
+  <% @users.each do |user| %>
+    <div class="row">
+      <aside class="col-md-4">
+        <section class="user_info">
+          <h1>
+            <ul>
+              <%= gravatar_for user %>
+              <%= user.name %>
+              <%= user.address %>
+              <%= user.phone_number %>
+              <%= user.user_type %>
+              <p>Admin: <%= user.admin %></p>
+              <% if current_user.admin? && !current_user?(user) %>
+              | <%= link_to t(".delete"), user, method: :delete,
+                data: { confirm: t(".sure") } %>
+              <% end %>
+            </ul>
+          </h1>
+        </section>
+      </aside>
+    </div>
+  <% end %>
+
+  <%= will_paginate %>
+</div>

@@ -10,6 +10,7 @@ en:
   sign_in: "Sign In"
   cart: "Cart"
   welcome: "Welcome to the BukStore"
+
   layouts:
     header:
       nav_all: "All Books"
@@ -18,7 +19,12 @@ en:
       update: "Update Profile"
       settings: "Settings"
       signout: "Sign out"
+      order_list: "Orders"
+      add_book: "Add book"
+      user_list: "All users"
+      stastitics: "Stastitics"
     footer:
+
   sessions:
     new:
       p1: "New user?"
@@ -27,11 +33,22 @@ en:
       forgot_password: "Forgot your password?"
     create:
       error_signin: "Invalid email/password combination"
+
+  shared:
+    error_messages:
+      error_txt1: "The form contains"
+      error_txt2: "error"
+
   static_pages:
     home:
       detail: "Book details"
   users:
     title_sample: "Welcome to the Sample App!"
+    index:
+      user_list: "All users"
+      delete: "Delete"
+      sure: "Are you sure?"
+      add_user: "New User"
     new:
       sign_up: "Sign up "
       create: "Create my account"
@@ -40,6 +57,17 @@ en:
       not_found: "User not found"
     show:
       not_found: "User not found!"
+    edit:
+      edit_title: "Edit user"
+      edit_txt1: "Update your profile"
+      edit_txt2: "Change"
+      edit_submit: "Save changes"
+      log_msg: "Please log in."
+      wrong_user_msg: "You can not edit other's profile"
+    update:
+      update_success: "Profile updated"
+    destroy:
+      delete_success: "User deleted"
     form:
       error: "error "
       form_container: "The form contains "
@@ -58,6 +86,9 @@ en:
       gender_male: "Male"
       gender_female: "FeMale"
       gender_other: "Other"
+    newUser:
+      addUser_title: "Add User"
+      addUser_submit: "Add"
   shared:
     error_messages:
       error: "error"
