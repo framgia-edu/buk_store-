@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_24_092309) do
+ActiveRecord::Schema.define(version: 2018_07_26_015019) do
 
   create_table "books", force: :cascade do |t|
     t.integer "category_id"
@@ -92,6 +92,7 @@ ActiveRecord::Schema.define(version: 2018_07_24_092309) do
     t.boolean "deleted", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "password_digest"
   end
 
 end
