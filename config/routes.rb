@@ -13,8 +13,8 @@ Rails.application.routes.draw do
     get "/search", to: "search#search"
     get "/cart", to: "cart_item#index"
   end
-
   resources :users
+  resources :account_activations, only: [:edit]
 
   resources :categories, only: [:index] do
     resources :books, only: [:index, :show]

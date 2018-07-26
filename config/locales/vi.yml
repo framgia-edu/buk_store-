@@ -10,6 +10,19 @@ vi:
   sign_in: "Đăng nhập"
   cart: "Giỏ hàng"
   welcome: "Chào mừng đến với BukStore"
+  account_activation: "Kích hoạt tài khoản"
+  account_activated: "Tài khoản đã được kích hoạt!"
+  account_activate_invalid: "Đường dẫn kích hoạt không đúng"
+  activation_message1: "Tài khoản chưa được kích hoạt. "
+  activation_message2: "Kiểm trai thư của bạn để có thể kích hoạt."
+  activation_mesage: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản của bạn."
+  reset_password: "Đặt lại mật khẩu"
+  reset_password_mail: "Email được gửi với hướng dẫn đặt lại mật khẩu"
+  reset_password_error: "Địa chỉ email không đúng"
+  reset_password_success: "Mật khẩu đã được đặt lại."
+  reset_password_failed: "không được để trống"
+  reset_password_timeout: "Đặt lại mật khẩu đã hết hạn."
+  not_found: "Không tìm thấy người dùng!"
   layouts:
     header:
       nav_all: "Tất cả sách"
@@ -69,6 +82,7 @@ vi:
             email:
               blank: " không được để trống"
               invalid: " không hợp lệ"
+              taken: " đã tồn tại trong hệ thống"
             password:
               blank: " không được để trống"
               too_short: " quá ngắn (tối thiểu 6 ký tự)"
@@ -85,6 +99,8 @@ vi:
               blank: " không được để trống"
               too_short: " quá ngắn (tối thiểu 10 ký tự)"
               too_long: " quá dài (tối đa 20 ký tự)"
+            password_confirmation:
+              confirmation: " không khớp"
     attributes:
       user:
         genders:
@@ -92,12 +108,11 @@ vi:
           female: Nữ
           trans: Chuyển giới
   date:
-      formats:
-        default: ! "%d/%m/%Y"
+    formats:
+      default: ! "%d/%m/%Y"
   datetime:
       formats:
         default: ! "%d/%m/%Y %H:%M"
-
   books:
     show_all_books:
       all_books: "Tất cả sách"
@@ -112,3 +127,23 @@ vi:
   will_paginate:
     next_label: "Tiếp"
     previous_label: "Trước"
+  user_mailer:
+    account_activation:
+      title: "BukStore"
+      hi: "Chào "
+      welcome: "Chào mừng bạn đến với BukStore! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+      active: "Kích hoạt"
+    password_reset:
+      title: "Đặt lại mật khẩu"
+      content: "Để đặt lại mật khẩu, hãy nhấp vào liên kết bên dưới:"
+      expire: "Liên kết này sẽ hết hạn sau hai giờ nữa."
+      footer: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ vẫn như cũ."
+  password_resets:
+    new:
+      title: "Quên mật khẩu"
+      submit: "Xác nhận"
+    edit:
+      title: "Đặt lại mật khẩu"
+      reset_button: "Cập nhật mật khẩu"
+      password: "Mật khẩu"
+      confirmation_password: "Xác nhận lại"
