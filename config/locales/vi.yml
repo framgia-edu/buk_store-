@@ -23,16 +23,21 @@ vi:
   reset_password_failed: "không được để trống"
   reset_password_timeout: "Đặt lại mật khẩu đã hết hạn."
   not_found: "Không tìm thấy người dùng!"
+  profile: "Tài khoản"
+  update: "Cập nhật tài khoản"
+  settings: "Cài đặt"
+  signout: "Đăng xuất"
 
   layouts:
     header:
       nav_all: "Tất cả sách"
       deal: "Khuyến mãi"
-      profile: "Tài khoản"
-      update: "Cập nhật tài khoản"
-      settings: "Cài đặt"
-      signout: "Đăng xuất"
-    footer:
+    admin:
+      user_list: "Người dùng"
+      stastitics: "Thống kê"
+    employee:
+      order_list: "Đơn hàng"
+      add_book: "Thêm sách"
 
   sessions:
     new:
@@ -55,6 +60,13 @@ vi:
 
   users:
     title_sample: "Chào mừng đến với Ứng dụng mẫu!"
+    index:
+      user_list: "Tất cả người dùng"
+      delete: "Xóa người dùng"
+      detail: "Chi tiết"
+      sure: "Bạn chắc chứ?"
+      add_employee: "Thêm nhân viên mới"
+      not_admin: "Bạn không phải là quản trị viên!"
     new:
       sign_up: "Đăng ký"
       create: "Tạo tài khoản của tôi"
@@ -70,6 +82,8 @@ vi:
       wrong_user_msg: "Bạn không thể chỉnh sửa hồ sơ người khác!"
     update:
       update_success: "Cập nhật hồ sơ thành công!"
+    destroy:
+      delete_success: "Người dùng đã bị xóa!"
     form:
       error: "lỗi "
       form_container: "Biểu mẫu có chứa "
@@ -85,6 +99,21 @@ vi:
       gender_male: "Nam"
       gender_female: "Nữ"
       gender_other: "Khác"
+    add_employee:
+      addemployee_title: "Thêm nhân viên mới"
+      addemployee_submit: "Thêm"
+      user_type: "Loại người dùng"
+      error: "lỗi "
+      form_container: "Biểu mẫu có chứa "
+      name: "Họ tên"
+      gender: "Giới tính"
+      birthday: "Ngày sinh"
+      address: "Địa chỉ"
+      phone_number: "Số điện thoại"
+      card_number: "Số thẻ ngân hàng"
+      email: "Email"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận lại mật khẩu"
   shared:
     error_messages:
       error: "lỗi"
@@ -125,6 +154,10 @@ vi:
           male: Nam
           female: Nữ
           trans: Chuyển giới
+        user_types:
+          admin: "Quản trị viên"
+          employee: "Nhân viên"
+          customer: "Khách hàng"
   date:
     formats:
       default: ! "%d/%m/%Y"

@@ -4,7 +4,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :name, :address,
         :phone_number, :card_number, :email
       t.datetime :birthday
-      t.integer :user_type
+      t.integer :user_type, default: 0
       t.integer :gender, default: 0
       t.boolean :block, default: false
       t.boolean :deleted, default: false

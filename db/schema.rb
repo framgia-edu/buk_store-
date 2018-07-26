@@ -88,7 +88,7 @@ ActiveRecord::Schema.define(version: 2018_08_01_011928) do
     t.string "card_number"
     t.string "email"
     t.datetime "birthday"
-    t.integer "user_type"
+    t.integer "user_type", default: 0
     t.integer "gender", default: 0
     t.boolean "block", default: false
     t.boolean "deleted", default: false
