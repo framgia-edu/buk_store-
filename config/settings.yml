@@ -9,3 +9,4 @@ password_min_length: 6
 avatar_user_size: 80
 per_page_search: 9
 per_page: 12
+reset_password_time: 2

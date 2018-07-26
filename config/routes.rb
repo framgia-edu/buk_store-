@@ -12,9 +12,12 @@ Rails.application.routes.draw do
     delete "/logout", to: "sessions#destroy"
     get "/search", to: "search#search"
     get "/cart", to: "cart_item#index"
+    get "/forgot" , to: "password_resets#new"
+    get "/password_reset_path" , to: "password_resets#edit"
   end
   resources :users
   resources :account_activations, only: [:edit]
+  resources :password_resets, only: [:new, :create, :edit, :update]
 
   resources :categories, only: [:index] do
     resources :books, only: [:index, :show]
