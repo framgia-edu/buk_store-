@@ -23,6 +23,7 @@ vi:
   reset_password_failed: "không được để trống"
   reset_password_timeout: "Đặt lại mật khẩu đã hết hạn."
   not_found: "Không tìm thấy người dùng!"
+
   layouts:
     header:
       nav_all: "Tất cả sách"
@@ -32,6 +33,7 @@ vi:
       settings: "Cài đặt"
       signout: "Đăng xuất"
     footer:
+
   sessions:
     new:
       p1: "Người dùng mới?"
@@ -40,9 +42,16 @@ vi:
       forgot_password: "Quên mật khẩu?"
     create:
       error_signin: "Sai email hoặc mật khẩu!"
+
+  shared:
+    error_messages:
+      error_txt1: "Mẫu đăng kí chứa"
+      error_txt2: "lỗi"
+
   static_pages:
     home:
       detail: "Mô tả sách"
+
   users:
     title_sample: "Chào mừng đến với Ứng dụng mẫu!"
     new:
@@ -51,8 +60,15 @@ vi:
     create:
       create_failed: "Lỗi, không thể tạo"
       not_found: "Không tìm thấy người dùng"
-    show:
-      not_found: "Người dùng này không tồn tại!"
+    edit:
+      edit_title: "Chỉnh sửa hồ sơ"
+      edit_txt1: "Chỉnh sửa hồ sơ "
+      edit_txt2: "Thay đổi"
+      edit_submit: "Lưu thay đổi"
+      log_msg: "Bạn phải đăng nhập đã!"
+      wrong_user_msg: "Bạn không thể chỉnh sửa hồ sơ người khác!"
+    update:
+      update_success: "Cập nhật hồ sơ thành công!"
     form:
       error: "lỗi "
       form_container: "Biểu mẫu có chứa "
@@ -72,6 +88,7 @@ vi:
     error_messages:
       error: "lỗi"
       form_container: "Biểu mẫu có chứa "
+
   activerecord:
     errors:
       models:

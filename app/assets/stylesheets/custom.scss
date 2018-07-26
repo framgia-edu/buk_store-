@@ -27,7 +27,7 @@ header, footer {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: black;
+  color: $black;
 }
 
 .container-fluid {
@@ -49,8 +49,8 @@ header, footer {
   background-image: url(jumbotronbackground.jpg);
   background-position: 0% 25%;
   background-size: cover;
-  color: white;
-  text-shadow: black 0.3em 0.3em 0.3em;
+  color: $white;
+  text-shadow: $black 0.3em 0.3em 0.3em;
   height: 500px;
 }
 
@@ -59,7 +59,7 @@ footer {
   bottom: 0;
   margin-top: 50px;
   width: 100%;
-  color: white;
+  color: $white;
   text-align: center;
 }
 
