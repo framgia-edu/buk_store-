@@ -18,8 +18,27 @@
             <li><%= link_to t(".deal"), "#" %></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to t("sign_up"), signup_path %></li>
-            <li><%= link_to t("sign_in"), "#" %></li>
+            <% if logged_in? %>
+              <li class="dropdown">
+                <%= link_to "#", class: "dropdown-toggle",
+                  data: {toggle: "dropdown"} do %>
+                  <%= @current_user.name %>
+                  <b class="caret"></b>
+                <% end %>
+                <ul class="dropdown-menu">
+                  <li><%= link_to t(".profile"), current_user %></li>
+                  <li><%= link_to t(".update"), "#" %></li>
+                  <li><%= link_to t(".settings"), "#" %></li>
+                  <li class="divider"></li>
+                  <li>
+                    <%= link_to t(".signout"), logout_path, method: :delete %>
+                  </li>
+                </ul>
+              </li>
+            <% else %>
+              <li><%= link_to t("sign_up"), signup_path %></li>
+              <li><%= link_to t("sign_in"), login_path %></li>
+            <% end %>
             <li><%= link_to t("cart"), "#" %></li>
           </ul>
         </div>

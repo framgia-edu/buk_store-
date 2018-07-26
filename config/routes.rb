@@ -7,16 +7,18 @@ Rails.application.routes.draw do
     get "/contact", to: "static_pages#contact"
     get "/signup", to: "users#new"
     post "/signup", to: "users#create"
+    get "/login", to: "sessions#new"
+    post "/login", to: "sessions#create"
+    delete "/logout", to: "sessions#destroy"
     get "/search", to: "search#search"
-
-    resources :users
-
+    get "/cart", to: "cart_item#index"
   end
+
+  resources :users
 
   resources :categories, only: [:index] do
     resources :books, only: [:index, :show]
   end
 
-  get "/cart", to: "cart_item#index"
   resources :cart_item, path: "/cart/items"
 end
