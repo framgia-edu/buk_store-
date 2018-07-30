@@ -7,7 +7,7 @@ class CreateBooks < ActiveRecord::Migration[5.2]
       t.decimal :price, :discount
       t.boolean :trend, default: false
 
-      t.timestamps
+      t.timestamps index: true
     end
   end
 end

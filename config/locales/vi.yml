@@ -83,3 +83,18 @@ vi:
   datetime:
       formats:
         default: ! "%d/%m/%Y %H:%M"
+
+  books:
+    show_all_books:
+      all_books: "Tất cả sách"
+
+  search:
+    search:
+      all_books: "Tất cả sách"
+      search: "Tìm kiếm"
+      search_for: "Tìm kiếm cho"
+      add_to_cart: "Thêm vào giỏ hàng"
+
+  will_paginate:
+    next_label: "Tiếp"
+    previous_label: "Trước"
