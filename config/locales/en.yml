@@ -9,12 +9,55 @@ en:
   sign_up: "Sign Up"
   sign_in: "Sign In"
   cart: "Cart"
+  welcome: "Welcome to the BukStore"
   layouts:
     header:
       nav_all: "All Books"
       deal: "Deals"
     footer:
-
   static_pages:
     home:
       detail: "Book details"
+  users:
+    title_sample: "Welcome to the Sample App!"
+    new:
+      sign_up: "Sign up "
+      create: "Create my account"
+    create:
+      create_failed: "Errors, Create failed"
+      not_found: "User not found"
+    form:
+      error: "error "
+      form_container: "The form contains "
+      sign_up: "Sign up "
+      content_sigup: "This will be a signup page for new users. "
+      create: "Create my account"
+      name: "Name"
+      gender: "Gender"
+      birthday: "Birthday"
+      address: "Address"
+      phone_number: "Phone Number"
+      card_number: "Card Number"
+      email: "Email"
+      password: "Password"
+      confirmation: "Confirmation Password"
+      gender_male: "Male"
+      gender_female: "FeMale"
+      gender_other: "Other"
+  shared:
+    error_messages:
+      error: "error"
+      form_container: "The form contains "
+  activerecord:
+    attributes:
+      user:
+        genders:
+          male: Male
+          female: Female
+          trans: Trans
+  date:
+      formats:
+        default: ! "%d/%m/%Y"
+  datetime:
+      formats:
+        default: ! "%d/%m/%Y %H:%M"
