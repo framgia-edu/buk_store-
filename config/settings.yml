@@ -1,7 +1,4 @@
 name_max_length: 25
-gender_length: 1
-birthday_min_length: 8
-birthday_max_length: 20
 address_max_length: 255
 phone_number_min_length: 8
 phone_number_max_length: 15

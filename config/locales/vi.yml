@@ -14,7 +14,19 @@ vi:
     header:
       nav_all: "Tất cả sách"
       deal: "Khuyến mãi"
+      profile: "Tài khoản"
+      update: "Cập nhật tài khoản"
+      settings: "Cài đặt"
+      signout: "Đăng xuất"
     footer:
+  sessions:
+    new:
+      p1: "Người dùng mới?"
+      sign_up: "Đăng kí ngay!"
+      login_password: "Mật khẩu"
+      forgot_password: "Quên mật khẩu?"
+    create:
+      error_signin: "Sai email hoặc mật khẩu!"
   static_pages:
     home:
       detail: "Mô tả sách"
@@ -26,6 +38,8 @@ vi:
     create:
       create_failed: "Lỗi, không thể tạo"
       not_found: "Không tìm thấy người dùng"
+    show:
+      not_found: "Người dùng này không tồn tại!"
     form:
       error: "lỗi "
       form_container: "Biểu mẫu có chứa "

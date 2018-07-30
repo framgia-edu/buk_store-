@@ -14,7 +14,19 @@ en:
     header:
       nav_all: "All Books"
       deal: "Deals"
+      profile: "Profile"
+      update: "Update Profile"
+      settings: "Settings"
+      signout: "Sign out"
     footer:
+  sessions:
+    new:
+      p1: "New user?"
+      sign_up: "Sign up now!"
+      login_password: "Password"
+      forgot_password: "Forgot your password?"
+    create:
+      error_signin: "Invalid email/password combination"
   static_pages:
     home:
       detail: "Book details"
@@ -26,6 +38,8 @@ en:
     create:
       create_failed: "Errors, Create failed"
       not_found: "User not found"
+    show:
+      not_found: "User not found!"
     form:
       error: "error "
       form_container: "The form contains "
