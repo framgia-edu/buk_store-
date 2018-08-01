@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
-  margin-bottom: 30px;
+  margin:70px 0 30px;
   text-align: center;
 }
 
@@ -17,6 +17,10 @@ header, footer {
   background-color: $grey-medium-light;
   margin-top: 120px;
   display: initial;
+}
+
+body {
+  margin-top: 60px;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,
@@ -51,7 +55,7 @@ header, footer {
   background-size: cover;
   color: $white;
   text-shadow: $black 0.3em 0.3em 0.3em;
-  height: 500px;
+  height: 300px;
 }
 
 footer {
@@ -163,7 +167,7 @@ li.book_item {
 
 .category_book {
   background: $category_book;
-  border-radius:  10px;
+  border-radius: 10px;
   display: inline-block;
   width: 100%;
 }

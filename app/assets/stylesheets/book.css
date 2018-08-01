@@ -1,0 +1,62 @@
+@import 'color';
+
+.item-photo{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-right:1px solid $color-item-color;
+}
+
+.section{
+  width:100%;
+  margin-left:-15px;
+  padding:2px;
+  padding-left:15px;
+  padding-right:15px;
+  background: $backgroung-detail
+}
+
+.title-price{
+  margin-top:30px;
+  margin-bottom:0;
+  color:black
+}
+
+div.section > div {
+  width:100%;
+  display:inline-flex;
+}
+
+div.section > div > input {
+  margin:0;
+  padding-left:5px;
+  font-size:10px;
+  padding-right:5px;
+  max-width:18%;
+  text-align:center;
+}
+
+.img_thumb {
+  max-width:90%;
+}
+
+.book_info {
+  border: 0px solid gray;
+  height: 500px
+}
+
+.author_info {
+  color: $color-author;
+}
+
+.language_book {
+  padding-bottom:5px;
+}
+
+.quantity_book {
+  padding-bottom:20px;
+}
+
+.btn_add_to_cart {
+  margin-right:20px;
+}

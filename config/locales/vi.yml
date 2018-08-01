@@ -173,7 +173,15 @@ vi:
       all_books: "Tất cả sách"
     book:
       add_to_cart: "Thêm vào giỏ hàng"
-
+    show:
+      home: Trang chủ
+      book: Sách
+      by: được xuất bản bởi
+      author: Tác giả
+      price: Giá
+      discount: Chiết khấu
+      description: Mô Tả
+      add_to_cart: "Thêm vào giỏ hàng"
   search:
     search:
       all_books: "Tất cả sách"

@@ -4,7 +4,9 @@ class BooksController < ApplicationController
     @categories = Category.order :category_name
   end
 
-  def show; end
+  def show
+    @book = Book.find params[:id]
+  end
 
   private
 

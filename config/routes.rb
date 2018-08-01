@@ -27,6 +27,7 @@ Rails.application.routes.draw do
   post "/cart_items/add_quantity", to: "cart_items#update"
   post "/cart_items/reduce", to: "cart_items#update"
   delete "/cart_items/delete", to: "cart_items#destroy"
+  resources :books, only: [:index, :show]
   resources :categories, only: [:index] do
     resources :books, only: [:index, :show, :new, :update]
   end
