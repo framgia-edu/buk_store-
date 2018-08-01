@@ -23,6 +23,7 @@ en:
   reset_password_failed: "can't be empty"
   reset_password_timeout: "Password reset has expired."
   not_found: "User not found!"
+
   layouts:
     header:
       nav_all: "All Books"
@@ -32,6 +33,7 @@ en:
       settings: "Settings"
       signout: "Sign out"
     footer:
+
   sessions:
     new:
       p1: "New user?"
@@ -40,6 +42,12 @@ en:
       forgot_password: "Forgot your password?"
     create:
       error_signin: "Invalid email/password combination"
+
+  shared:
+    error_messages:
+      error_txt1: "The form contains"
+      error_txt2: "error"
+
   static_pages:
     home:
       detail: "Book details"
@@ -51,8 +59,15 @@ en:
     create:
       create_failed: "Errors, Create failed"
       not_found: "User not found"
-    show:
-      not_found: "User not found!"
+    edit:
+      edit_title: "Edit user"
+      edit_txt1: "Update your profile"
+      edit_txt2: "Change"
+      edit_submit: "Save changes"
+      log_msg: "Please log in."
+      wrong_user_msg: "You can not edit other's profile"
+    update:
+      update_success: "Profile updated"
     form:
       error: "error "
       form_container: "The form contains "
