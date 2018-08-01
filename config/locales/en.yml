@@ -40,6 +40,7 @@ en:
       sign_up: "Sign up now!"
       login_password: "Password"
       forgot_password: "Forgot your password?"
+      remember_me: "Remember me on this computer"
     create:
       error_signin: "Invalid email/password combination"
 
