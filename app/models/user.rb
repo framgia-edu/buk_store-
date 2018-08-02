@@ -6,7 +6,7 @@ class User < ApplicationRecord
   has_many :employees
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  attr_reader :activation_token
+  attr_reader :activation_token, :remember_token
   before_create :create_activation_digest
   before_save :email_downcase
   has_secure_password
@@ -33,16 +33,21 @@ class User < ApplicationRecord
     BCrypt::Password.new(digest).is_password? token
   end
 
-  def current_user? user
-    user == self
-  end
-
   def activated
     update_columns activated: true, activated_at: Time.zone.now
   end
 
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
+  end
+
+  def remember
+    @remember_token = User.new_token
+    update_attributes remember_digest: User.digest(remember_token)
+  end
+
+  def forget
+    update_attributes remember_digest: nil
   end
 
   class << self
@@ -77,7 +82,7 @@ class User < ApplicationRecord
   end
 
   def create_activation_digest
-    @activation_token  = User.new_token
+    @activation_token = User.new_token
     self.activation_digest = User.digest activation_token
   end
 end
