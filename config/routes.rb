@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'history_orders/index'
   scope "(:locale)", locale: /en|vi/ do
     root to: "books#index"
     get "/home", to: "books#index"
@@ -11,14 +12,22 @@ Rails.application.routes.draw do
     post "/login", to: "sessions#create"
     delete "/logout", to: "sessions#destroy"
     get "/search", to: "search#search"
-    get "/cart", to: "cart_item#index"
-  end
-  resources :users
-  resources :account_activations, only: [:edit]
+    get "/books", to: "books#index"
+    get "/show", to: "static_pages#show"
+    post "/cart_items", to: "cart_items#create"
+    delete "/cart", to: "carts#destroy"
+    get "/cart", to: "carts#index"
+    get "/history_orders", to: "history_orders#index"
 
-  resources :categories, only: [:index] do
-    resources :books, only: [:index, :show]
+    resources :users
+    resources :account_activations, only: [:edit]
+    resources :categories, only: [:index] do
+      resources :books, only: [:index, :show]
+    end
   end
+  post "/cart_items/add_quantity", to: "cart_items#add_quantity"
+  post "/cart_items/reduce", to: "cart_items#reduce_quantity"
+  delete "/cart_items/delete", to: "cart_items#destroy"
+  resources :orders
 
-  resources :cart_item, path: "/cart/items"
 end

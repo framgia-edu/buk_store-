@@ -14,7 +14,7 @@
           <ul class="nav navbar-nav">
             <li><%= link_to t("home_title"), root_path %></li>
             <li><%= link_to t("about_title"), about_path %></li>
-            <li><%= link_to t(".nav_all"), "#" %></li>
+            <li><%= link_to t(".nav_all"), books_path %></li>
             <li><%= link_to t(".deal"), "#" %></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -26,6 +26,7 @@
                   <b class="caret"></b>
                 <% end %>
                 <ul class="dropdown-menu">
+                  <li><%= link_to "Lich su mua hang", "#" %></li>
                   <li><%= link_to t(".profile"), current_user %></li>
                   <li><%= link_to t(".update"), edit_user_path(current_user) %></li>
                   <li><%= link_to t(".settings"), "#" %></li>
@@ -39,7 +40,7 @@
               <li><%= link_to t("sign_up"), signup_path %></li>
               <li><%= link_to t("sign_in"), login_path %></li>
             <% end %>
-            <li><%= link_to t("cart"), "#" %></li>
+            <li><%= link_to t("cart"), cart_path, class: "btn btn-link" %></li>
           </ul>
         </div>
       </div>
