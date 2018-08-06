@@ -34,14 +34,8 @@ class UsersController < ApplicationController
     end
   end
 
-  def find_user
-    @user = User.find_by id: params[:id]
-    return if @user
-    flash[:danger] = t "not_found"
-    redirect_to root_path
-  end
-
   private
+
   def user_params
     params.require(:user).permit :name, :gender, :birthday, :address,
       :phone_number, :email, :password, :password_confirmation
@@ -55,5 +49,13 @@ class UsersController < ApplicationController
 
   def correct_user
     redirect_to root_url unless @user.current_user? current_user
+  end
+
+  def find_user
+    @user = User.find_by id: params[:id]
+
+    return if @user
+    flash[:danger] = t "not_found"
+    redirect_to root_path
   end
 end

@@ -14,7 +14,7 @@ vi:
   account_activated: "Tài khoản đã được kích hoạt!"
   account_activate_invalid: "Đường dẫn kích hoạt không đúng"
   activation_message1: "Tài khoản chưa được kích hoạt. "
-  activation_message2: "Kiểm trai thư của bạn để có thể kích hoạt."
+  activation_message2: "Kiểm tra thư của bạn để có thể kích hoạt."
   activation_mesage: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản của bạn."
   reset_password: "Đặt lại mật khẩu"
   reset_password_mail: "Email được gửi với hướng dẫn đặt lại mật khẩu"

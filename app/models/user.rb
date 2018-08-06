@@ -6,7 +6,7 @@ class User < ApplicationRecord
   has_many :employees
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  attr_reader :activation_token, :remember_token
+  attr_reader :activation_token, :remember_token, :reset_token
   before_create :create_activation_digest
   before_save :email_downcase
   has_secure_password
@@ -50,6 +50,19 @@ class User < ApplicationRecord
     update_attributes remember_digest: nil
   end
 
+  def create_reset_digest
+    @reset_token = User.new_token
+    update_attributes reset_digest:  User.digest(reset_token)
+    update_attributes reset_sent_at: Time.zone.now
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+
+  def password_reset_expired?
+    reset_sent_at < Settings.reset_password_time.hours.ago
+  end
   class << self
     def digest string
       cost = if ActiveModel::SecurePassword.min_cost
@@ -66,7 +79,9 @@ class User < ApplicationRecord
 
     def gender_attributes_for_select
       genders.map do |gender, _|
-        [I18n.t("activerecord.attributes.#{model_name.i18n_key}.genders.#{gender}"), gender]
+        [I18n.t(
+          "activerecord.attributes.#{model_name.i18n_key}.genders.#{gender}"
+        ), gender]
       end
     end
   end
