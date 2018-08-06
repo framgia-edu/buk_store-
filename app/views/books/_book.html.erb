@@ -2,7 +2,7 @@
   <li class="book_item">
     <%= link_to image_tag("https://goo.gl/K5PBdH", alt: "Image",
       class: "img-responsive")%>
-    <p><%= link_to book.name, "#" %></p>
+    <p><%= link_to book.name, book_path(book, :id) %></p>
     <p><%= link_to book.author, "#" %></p>
     <p><%= number_to_currency book.price %></p>
     <%= button_to t(".add_to_cart"), cart_items_path(book_id: book.id),

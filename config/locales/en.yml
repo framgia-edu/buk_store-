@@ -140,6 +140,15 @@ en:
       all_books: "All Books"
     book:
       add_to_cart: "Add to Cart"
+    show:
+      home: Home
+      book: Book
+      by: published by
+      author: Author
+      price: Price
+      discount: Discount
+      description: Description
+      add_to_cart: "Add to Cart"
   search:
     search:
       all_books: "All Books"
