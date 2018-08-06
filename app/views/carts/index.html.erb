@@ -46,12 +46,11 @@
               </tfoot>
             </table>
           </ul>
-          <div>
-            <%= link_to t(".proceed_to_checkout"), "#" %><br>
-            <%= link_to t(".empty_cart"), cart_path,
-              method: :delete, data: {confirm: t(".are_you_sure")} %><br>
-            <%= link_to t(".order"), "#", class: "btn btn-primary" %>
-          </div>
+          <%= link_to t(".proceed_to_checkout"), "#" %><br>
+          <%= link_to t(".empty_cart"), cart_path,
+            method: :delete, data: {confirm: t(".are_you_sure")} %><br>
+          <%= button_to t(".order"), orders_path(id: @cart.id),
+            class: "btn btn-primary" %>
         <% end %>
       </div>
     </div>

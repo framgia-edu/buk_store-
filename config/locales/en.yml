@@ -8,7 +8,7 @@ en:
   contact_title: "Contact"
   sign_up: "Sign Up"
   sign_in: "Sign In"
-  cart: "Cart"
+  cart: " Cart"
   welcome: "Welcome to the BukStore"
   account_activation: "Account activation"
   account_activated: "Account activated!"
@@ -29,6 +29,8 @@ en:
   signout: "Sign out"
   delete_cart: "Delete cart success!!!"
   delete_cart_item: "Delete cart item success!!!"
+  thankyou: "Thank you for purchase, we will contact you soon!!!"
+  log_msg: "Please log in."
   layouts:
     header:
       nav_all: "All Books"
@@ -39,6 +41,12 @@ en:
     employee:
       order_list: "Orders"
       add_book: "Add book"
+      profile: "Profile"
+      update: "Update Profile"
+      settings: "Settings"
+      signout: "Sign out"
+      purchase_history: "Purchase History"
+    footer:
 
   sessions:
     new:
@@ -78,7 +86,6 @@ en:
       edit_txt1: "Update your profile"
       edit_txt2: "Change"
       edit_submit: "Save changes"
-      log_msg: "Please log in."
       wrong_user_msg: "You can not edit other's profile"
     update:
       update_success: "Profile updated"

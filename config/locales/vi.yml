@@ -8,7 +8,7 @@ vi:
   contact_title: "Trang liên hệ"
   sign_up: "Đăng kí"
   sign_in: "Đăng nhập"
-  cart: "Giỏ hàng"
+  cart: " Giỏ hàng"
   welcome: "Chào mừng đến với BukStore"
   account_activation: "Kích hoạt tài khoản"
   account_activated: "Tài khoản đã được kích hoạt!"
@@ -31,7 +31,8 @@ vi:
   delete_cart_item: "Đã xóa phần tử!!!"
   book_not_found: "Không tìm thấy sách!!!"
   cart_item_not_found: "Không tìm thấy cart item!!!"
-
+  thankyou: "Cảm ơn bạn đã mua hàng, chúng tôi sẽ sớm liên hệ với bạn!!!"
+  log_msg: "Bạn phải đăng nhập đã!"
   layouts:
     header:
       nav_all: "Tất cả sách"
@@ -42,6 +43,12 @@ vi:
     employee:
       order_list: "Đơn hàng"
       add_book: "Thêm sách"
+      profile: "Tài khoản"
+      update: "Cập nhật tài khoản"
+      settings: "Cài đặt"
+      signout: "Đăng xuất"
+      purchase_history: "Lịch sử mua hàng"
+    footer:
 
   sessions:
     new:
@@ -82,7 +89,6 @@ vi:
       edit_txt1: "Chỉnh sửa hồ sơ "
       edit_txt2: "Thay đổi"
       edit_submit: "Lưu thay đổi"
-      log_msg: "Bạn phải đăng nhập đã!"
       wrong_user_msg: "Bạn không thể chỉnh sửa hồ sơ người khác!"
     update:
       update_success: "Cập nhật hồ sơ thành công!"

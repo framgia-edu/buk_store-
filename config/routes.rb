@@ -20,13 +20,18 @@ Rails.application.routes.draw do
     post "/cart_items", to: "cart_items#create"
     delete "/cart", to: "carts#destroy"
     get "/cart", to: "carts#index"
+    resources :users
   end
-  resources :users
-  resources :account_activations, only: [:edit]
-  resources :password_resets, only: [:new, :create, :edit, :update]
+
   post "/cart_items/add_quantity", to: "cart_items#update"
   post "/cart_items/reduce", to: "cart_items#update"
   delete "/cart_items/delete", to: "cart_items#destroy"
+
+  resources :orders
+
+  resources :account_activations, only: [:edit]
+  resources :password_resets, only: [:new, :create, :edit, :update]
+
   resources :categories, only: [:index] do
     resources :books, only: [:index, :show, :new, :update]
   end

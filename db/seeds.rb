@@ -3,7 +3,7 @@
   Category.create!(category_name: genre)
 end
 
-#Book.__elasticsearch__.create_index!(force: true)
+Book.__elasticsearch__.create_index!(force: true)
 
 categories = Category.order(:created_at).take(6)
 10.times do |n|
@@ -37,7 +37,7 @@ User.create!(name: "employee",
   activated: true
 )
 
-99.times do |n|
+10.times do |n|
   name  = Faker::Name.name
   email = "example-#{n+1}@railstutorial.org"
   password = "password"
