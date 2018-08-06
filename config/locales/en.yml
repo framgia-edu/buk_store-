@@ -23,16 +23,21 @@ en:
   reset_password_failed: "can't be empty"
   reset_password_timeout: "Password reset has expired."
   not_found: "User not found!"
+  profile: "Profile"
+  update: "Update Profile"
+  settings: "Settings"
+  signout: "Sign out"
 
   layouts:
     header:
       nav_all: "All Books"
       deal: "Deals"
-      profile: "Profile"
-      update: "Update Profile"
-      settings: "Settings"
-      signout: "Sign out"
-    footer:
+    admin:
+      user_list: "All users"
+      stastitics: "Stastitics"
+    employee:
+      order_list: "Orders"
+      add_book: "Add book"
 
   sessions:
     new:
@@ -54,6 +59,13 @@ en:
       detail: "Book details"
   users:
     title_sample: "Welcome to the Sample App!"
+    index:
+      user_list: "All users"
+      delete: "Delete"
+      detail: "Detail"
+      sure: "Are you sure?"
+      add_employee: "New Employee"
+      not_admin: "You are not the admin!"
     new:
       sign_up: "Sign up "
       create: "Create my account"
@@ -69,12 +81,30 @@ en:
       wrong_user_msg: "You can not edit other's profile"
     update:
       update_success: "Profile updated"
+    destroy:
+      delete_success: "User deleted"
     form:
       error: "error "
       form_container: "The form contains "
       sign_up: "Sign up "
       content_sigup: "This will be a signup page for new users. "
       create: "Create my account"
+      name: "Name"
+      gender: "Gender"
+      birthday: "Birthday"
+      address: "Address"
+      phone_number: "Phone Number"
+      card_number: "Card Number"
+      email: "Email"
+      password: "Password"
+      confirmation: "Confirmation Password"
+      gender_male: "Male"
+      gender_female: "FeMale"
+      gender_other: "Other"
+    add_employee:
+      addemployee_title: "Add Employee"
+      addemployee_submit: "Add"
+      user_type: "User type"
       name: "Name"
       gender: "Gender"
       birthday: "Birthday"

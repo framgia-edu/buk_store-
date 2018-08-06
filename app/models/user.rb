@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  enum user_type: {employee: 0, customer: 1}
+  enum user_type: {customer: 0, employee: 1, admin: 2}
   enum gender: {male: 1, female: 2, trans: 3}
   has_one :cart
   has_many :orders, dependent: :destroy
