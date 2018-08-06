@@ -27,7 +27,8 @@ en:
   update: "Update Profile"
   settings: "Settings"
   signout: "Sign out"
-
+  delete_cart: "Delete cart success!!!"
+  delete_cart_item: "Delete cart item success!!!"
   layouts:
     header:
       nav_all: "All Books"
@@ -137,6 +138,8 @@ en:
   books:
     show_all_books:
       all_books: "All Books"
+    book:
+      add_to_cart: "Add to Cart"
   search:
     search:
       all_books: "All Books"
@@ -163,3 +166,33 @@ en:
       reset_button: "Update password"
       password: "Password"
       confirmation_password: "Confirmation"
+  carts:
+    index:
+      sub_total: "Sub Total: "
+      proceed_to_checkout: "Proceed to checkout"
+      empty_cart: "Empty Cart"
+      are_you_sure: "Are you sure?"
+      order: "Order"
+      please_back: "There are no items in your shopping cart. Please "
+      go_back: "go back "
+      and_add: "and add some items to your cart."
+      item: "Item"
+      price: "Price"
+      quantity: "Quantity"
+      delete: "Delete"
+      total_price: "Total Price"
+      totals: "Totals"
+  remove: "Remove item"
+  date:
+    formats:
+      default: "%d-%m-%Y"
+      long: "%d %B, %Y"
+      short: "%d %b"
+
+  time:
+    am: "am"
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%d %B, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: "pm"

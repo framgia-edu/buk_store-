@@ -27,6 +27,10 @@ vi:
   update: "Cập nhật tài khoản"
   settings: "Cài đặt"
   signout: "Đăng xuất"
+  delete_cart: "Đã xóa giỏ hàng!!!"
+  delete_cart_item: "Đã xóa phần tử!!!"
+  book_not_found: "Không tìm thấy sách!!!"
+  cart_item_not_found: "Không tìm thấy cart item!!!"
 
   layouts:
     header:
@@ -167,13 +171,14 @@ vi:
   books:
     show_all_books:
       all_books: "Tất cả sách"
+    book:
+      add_to_cart: "Thêm vào giỏ hàng"
 
   search:
     search:
       all_books: "Tất cả sách"
       search: "Tìm kiếm"
       search_for: "Tìm kiếm cho"
-      add_to_cart: "Thêm vào giỏ hàng"
 
   will_paginate:
     next_label: "Tiếp"
@@ -198,3 +203,34 @@ vi:
       reset_button: "Cập nhật mật khẩu"
       password: "Mật khẩu"
       confirmation_password: "Xác nhận lại"
+  carts:
+    index:
+      sub_total: "Tổng tiền thanh toán: "
+      proceed_to_checkout: "Tiến hành thanh toán"
+      empty_cart: "Xóa giỏ hàng"
+      are_you_sure: "Bạn chắc chắn chứ?"
+      order: "Đặt hàng"
+      please_back: "Không có phần tử nào trong giỏ hàng, Vui lòng "
+      go_back: "quay trở lại "
+      and_add: "và thêm một số sản phẩm vào giỏ hàng"
+      item: "Sản phẩm"
+      price: "Gía"
+      quantity: "Số lượng"
+      delete: "Xóa"
+      total_price: "Tổng"
+      remove: "Xóa"
+      totals: "Tổng tiền thanh toán"
+  remove: "Xóa"
+  date:
+    formats:
+      default: "%d-%m-%Y"
+      long: "%d %B, %Y"
+      short: "%d %b"
+
+  time:
+    am: "sáng"
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%d %B, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: "chiều"
